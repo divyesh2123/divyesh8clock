@@ -7,9 +7,10 @@ import DisplayInformation from './DisplayInformation.jsx'
 import MyData from './MyData.jsx'
 import DisplayDataWithAxios from './DisplayDataWithAxios.jsx'
 import BasicForm from './BasicForm.jsx'
+import MyFormFormik from './MyFormFormik.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    <BasicForm />
+    <MyFormFormik />
   
 )
