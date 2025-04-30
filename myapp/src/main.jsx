@@ -8,9 +8,11 @@ import MyData from './MyData.jsx'
 import DisplayDataWithAxios from './DisplayDataWithAxios.jsx'
 import BasicForm from './BasicForm.jsx'
 import MyFormFormik from './MyFormFormik.jsx'
+import MyUserFormik from './MyUserFormik.jsx'
+import Product from './Product.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    <MyFormFormik />
+    <Product />
   
 )
