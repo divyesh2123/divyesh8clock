@@ -1,16 +1,30 @@
 import React from 'react'
-
-export default function ProductItem(d) {
-    console.log(d);
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
+import Card from '@mui/material/Card';
+export default function ProductItem({item,i}) {
+  
   return (
-    <div class="card" >
-  <img class="card-img-top" src={d.item.image} alt="Card image"/>
-  <div class="card-body">
-    <h4 class="card-title">{d.item.title}</h4>
-    <p class="card-text">{d.item.description}</p>
-    <a href="#" class="btn btn-primary">{d.i}</a>
-  </div>
-</div>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height="140"
+        image={item.thumbnail}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {item.title}
+        </Typography>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+         {item.description}
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+  </Card>
 
   )
 }

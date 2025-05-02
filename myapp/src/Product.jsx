@@ -6,9 +6,9 @@ export default function Product() {
 
     useEffect(()=>{
 
-        fetch("https://fakestoreapi.com/products").then(y=>y.json())
+        fetch("https://dummyjson.com/products").then(y=>y.json())
         .then(y=>{
-            setData(y);
+            setData(y.products);
         })
 
     })
