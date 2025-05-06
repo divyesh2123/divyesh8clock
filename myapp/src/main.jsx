@@ -15,11 +15,21 @@ import MaterialUIWithFormik from './MaterialUIWithFormik.jsx'
 import UserForm from './RegistrationForm.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import DataGridDemo from './DataGridDemo.jsx'
+import LoginInformation from './LoginInformation.jsx';
+import {BrowserRouter, Route, Routes}  from 'react-router'
+import Account from './Account.jsx'
+
 createRoot(document.getElementById('root')).render(
    <>
-   <ToastContainer />
-   <UserForm/>
-   <DataGridDemo/>
+      <BrowserRouter>
+         <Routes>
+
+            <Route path='/' element={<LoginInformation></LoginInformation>}/>
+            <Route path='/account' element={<Account></Account>}/>
+         </Routes>
+
+      </BrowserRouter>
+      
    </>
 
   
