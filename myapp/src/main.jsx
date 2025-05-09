@@ -18,16 +18,16 @@ import DataGridDemo from './DataGridDemo.jsx'
 import LoginInformation from './LoginInformation.jsx';
 import {BrowserRouter, Route, Routes}  from 'react-router'
 import Account from './Account.jsx'
+import MyUser from './MyUser.jsx';
+import Parent from './Parent.jsx'
+import MyMemo from './MyMemo.jsx'
+import CustomInformation from './CustomInformation.jsx'
+import MyParent from './MyParent.jsx'
 
 createRoot(document.getElementById('root')).render(
    <>
       <BrowserRouter>
-         <Routes>
-
-            <Route path='/' element={<LoginInformation></LoginInformation>}/>
-            <Route path='/account' element={<Account></Account>}/>
-         </Routes>
-
+        <MyParent/>
       </BrowserRouter>
       
    </>
