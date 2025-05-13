@@ -22,12 +22,19 @@ import MyUser from './MyUser.jsx';
 import Parent from './Parent.jsx'
 import MyMemo from './MyMemo.jsx'
 import CustomInformation from './CustomInformation.jsx'
-import MyParent from './MyParent.jsx'
-
+import MyParent from './MyParent.jsx';
+import { Provider } from 'react-redux'
+import store from './store/store.js'
+import CounterInfo from './CounterInfo.jsx'
+import UserWithRedux from './UserWithRedux.jsx'
+import PostInfo from './PostInfo.jsx'
 createRoot(document.getElementById('root')).render(
    <>
       <BrowserRouter>
-        <MyParent/>
+      <Provider store={store}>
+        <CounterInfo/>
+        <PostInfo/>
+        </Provider>
       </BrowserRouter>
       
    </>
