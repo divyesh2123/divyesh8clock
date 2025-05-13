@@ -28,14 +28,11 @@ import store from './store/store.js'
 import CounterInfo from './CounterInfo.jsx'
 import UserWithRedux from './UserWithRedux.jsx'
 import PostInfo from './PostInfo.jsx'
+import SuperParent from './SuperParent.jsx'
 createRoot(document.getElementById('root')).render(
    <>
-      <BrowserRouter>
-      <Provider store={store}>
-        <CounterInfo/>
-        <PostInfo/>
-        </Provider>
-      </BrowserRouter>
+     
+          <SuperParent/>
       
    </>
 
